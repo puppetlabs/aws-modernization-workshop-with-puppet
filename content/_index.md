@@ -8,15 +8,4 @@ weight: 1
 
 ### Welcome
 
-This is the begining of the hol after I deleted history
-
-### Learning Objectives
-- PE
-- Relay
-- Stuff
-
-{{% notice warning %}}
-<p style='text-align: left;'>
-The examples and sample code provided in this workshop are intended to be consumed as instructional content. These will help you understand how various AWS services can be architected to build a solution while demonstrating best practices along the way. These examples are not intended for use in production environments.
-</p>
-{{% /notice %}}
+An advantage of Infrastructure as Code practices is that once infrastructure and applications are brought under management you are able to track the history of configuration over time and react to unauthorized changes. Puppet Enterprise detects and reports upon these changes, being able to determine when a change initiated by a configuration of the client is intentional or corrective, which has the potential to trigger additional automation to protect you from outage or a security breach. In this workshop we'll dip into the security use case by integrating Puppet Enterprise with Relay, an easy event driven workflow automation solution for cloud operations teams built by Puppet which has direct integration with both Puppet Enterprise and AWS. Through this integration you'll see how unauthorized corrective changes to an EC2 instance's sudo configuration can be acted upon to fence the node, shutting it down, and leaving it for future examination.
